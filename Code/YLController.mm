@@ -489,7 +489,8 @@
     if ([[_telnetView frontMostConnection] connected]) {
         NSString *account = site.account;
         NSString *password = site.password;
-        if ( account && password )
+        if ( account && account.length &&
+            password && password.length )
         {
             [_telnetView insertText:[NSString stringWithFormat:@"%@\n%@\n",account,password]];
         }
