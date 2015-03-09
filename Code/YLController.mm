@@ -269,9 +269,15 @@
 - (void) loadLastConnections 
 {
     NSArray *dictionaries = [[NSUserDefaults standardUserDefaults] arrayForKey: @"LastConnections"];
-    for (NSDictionary *siteDictionay in dictionaries) {
-        [self newConnectionWithSite: [YLSite siteWithDictionary: siteDictionay]];
-    }    
+    for (NSDictionary *lastSite in dictionaries) {
+        YLSite *lastYLSite = [YLSite siteWithDictionary: lastSite];
+        YLSite *ylSiteWithAccount = nil;
+        for (YLSite *site in _sites)
+            if ([site.name isEqualToString:lastYLSite.name] && [site.address isEqualToString:lastYLSite.address])
+                ylSiteWithAccount = site;
+
+        [self newConnectionWithSite: ylSiteWithAccount ?: lastYLSite];
+    }
 }
 
 - (void) saveLastConnections 
