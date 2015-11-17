@@ -11,19 +11,6 @@
 
 @implementation SSKeychainQuery
 
-@synthesize account = _account;
-@synthesize service = _service;
-@synthesize label = _label;
-@synthesize passwordData = _passwordData;
-
-#if __IPHONE_3_0 && TARGET_OS_IPHONE
-@synthesize accessGroup = _accessGroup;
-#endif
-
-#ifdef SSKEYCHAIN_SYNCHRONIZABLE_AVAILABLE
-@synthesize synchronizable = _synchronizable;
-#endif
-
 #pragma mark - Public
 
 - (BOOL)save:(NSError *__autoreleasing *)error {
