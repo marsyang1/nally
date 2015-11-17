@@ -236,13 +236,13 @@ if (_cursorX <= _column - 1) { \
                 //cancels the sequence and displays substitution character ().
                 //SUB is processed as CAN
                 //This is not implemented here
-            } else if (c == ASC_EM ) { // ^Y
-            } else if (c == ASC_ESC) { // ^[
+            } else if (c == ASC_EM ) { // '^Y'
+            } else if (c == ASC_ESC) { // '^['
                 _state = TP_ESCAPE;
-            } else if (c == ASC_FS ) { // ^\ 
-            } else if (c == ASC_GS ) { // ^]
-            } else if (c == ASC_RS ) { // ^^
-            } else if (c == ASC_US ) { // ^_
+            } else if (c == ASC_FS ) { // '^\'
+            } else if (c == ASC_GS ) { // '^]'
+            } else if (c == ASC_RS ) { // '^^'
+            } else if (c == ASC_US ) { // '^_'
 // 0x20 ~ 0x7E ascii readible bytes... (btw Big5 second byte 0x40 ~ 0x7E)
             } else if (c == ASC_DEL) { // Ignored on input; not stored
 //          } else if (c == 0x80){
