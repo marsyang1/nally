@@ -52,31 +52,25 @@ static BOOL isGluingCharacter(unichar c)
 	for (i = 0; i < [text length]; i++) {
 		unichar c = [text characterAtIndex: i];
 		if (c == SPACE) {
-			COMMIT_BUFFER_RUN();
 			[runs addObject: spaceRun];
 			continue;
 		}
 		if (c == TAB) {
-			COMMIT_BUFFER_RUN();
 			[runs addObject: tabRun];
 			continue;
 		}
 		if (c == CR || c == LF) {
-			COMMIT_BUFFER_RUN();
 			[runs addObject: lineRun];
 			continue;
 		}
 		NSString *s = [NSString stringWithCharacters: &c length: 1];
 
 		if (!isGluingCharacter(c)) {
-			COMMIT_BUFFER_RUN();
 			[runs addObject: [YLRun runWithString: s type: YLRunTypeString encoding: encoding]];
 		} else {
 			[bufferRun appendString: s];
 		}
 	}
-	COMMIT_BUFFER_RUN();
-	[bufferRun release];
 
 	NSMutableArray *result = [NSMutableArray array];
 	YLLine *line = [[YLLine alloc] initWithWidth: length];

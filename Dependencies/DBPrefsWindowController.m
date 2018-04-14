@@ -28,8 +28,8 @@ static DBPrefsWindowController *_sharedPrefsWindowController = nil;
 }
 
 + (NSArray *) applicationIdentifierArrayForURLScheme: (NSString *) scheme {
-    CFArrayRef array = LSCopyAllHandlersForURLScheme((CFStringRef)scheme);
-    NSMutableArray *result = [NSMutableArray arrayWithArray: (NSArray *) array];
+    CFArrayRef array = LSCopyAllHandlersForURLScheme((__bridge CFStringRef)scheme);
+    NSMutableArray *result = [NSMutableArray arrayWithArray: (__bridge NSArray *) array];
     CFRelease(array);
     return result;
 }
@@ -62,8 +62,8 @@ static DBPrefsWindowController *_sharedPrefsWindowController = nil;
         NSString *appPath = [ws absolutePathForAppBundleWithIdentifier: appId];
         if (appPath) {
             NSURL *appURL = [NSURL fileURLWithPath: appPath];
-            if (LSCopyDisplayNameForURL((CFURLRef)appURL, &appNameInCFString) == noErr) {                
-                NSString *appName = [NSString stringWithString: (NSString *) appNameInCFString];
+            if (LSCopyDisplayNameForURL((__bridge CFURLRef)appURL, &appNameInCFString) == noErr) {                
+                NSString *appName = [NSString stringWithString: (__bridge NSString *) appNameInCFString];
                 CFRelease(appNameInCFString);
                 
                 if (nallyCount > 1 && [[appId lowercaseString] isEqualToString: nallyIdentifier])
@@ -86,9 +86,9 @@ static DBPrefsWindowController *_sharedPrefsWindowController = nil;
     [button setMenu: menu];
     
     /* Select the default client */
-    CFStringRef defaultHandler = LSCopyDefaultHandlerForURLScheme((CFStringRef) scheme);
+    CFStringRef defaultHandler = LSCopyDefaultHandlerForURLScheme((__bridge CFStringRef) scheme);
     if (defaultHandler) {
-        int index = [button indexOfItemWithRepresentedObject: (NSString *) defaultHandler];
+        int index = [button indexOfItemWithRepresentedObject: (__bridge NSString *) defaultHandler];
         if (index != -1)
             [button selectItemAtIndex: index];
         CFRelease(defaultHandler);
@@ -208,13 +208,13 @@ static DBPrefsWindowController *_sharedPrefsWindowController = nil;
 - (IBAction) setDefaultTelnetClient: (id) sender {
     NSString *appId = [[sender selectedItem] representedObject];
     if (appId) 
-        LSSetDefaultHandlerForURLScheme(CFSTR("telnet"), (CFStringRef)appId);
+        LSSetDefaultHandlerForURLScheme(CFSTR("telnet"), (__bridge CFStringRef)appId);
 }
 
 - (IBAction) setDefaultSSHClient: (id) sender {
     NSString *appId = [[sender selectedItem] representedObject];
     if (appId) 
-        LSSetDefaultHandlerForURLScheme(CFSTR("ssh"), (CFStringRef)appId);    
+        LSSetDefaultHandlerForURLScheme(CFSTR("ssh"), (__bridge CFStringRef)appId);    
 }
 
 #pragma mark -

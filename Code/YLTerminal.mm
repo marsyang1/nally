@@ -7,6 +7,7 @@
 //
 
 #import "YLTerminal.h"
+#import "YLSite.h"
 #import "YLLGlobalConfig.h"
 #import "encoding.h"
 

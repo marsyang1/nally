@@ -88,7 +88,7 @@
 		return nil;
 	}
 
-    return (NSArray *)result;
+    return (__bridge NSArray *)result;
 }
 
 
@@ -112,7 +112,7 @@
 		return NO;
 	}
 
-    self.passwordData = (NSData *)result;
+    self.passwordData = (__bridge NSData *)result;
     return YES;
 }
 

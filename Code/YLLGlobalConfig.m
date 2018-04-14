@@ -137,7 +137,7 @@ static YLLGlobalConfig *sSharedInstance;
             CFNumberRef number = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &zero);
             CFStringRef cfKeys[] = {kCTFontAttributeName, kCTForegroundColorAttributeName, kCTLigatureAttributeName};
             
-            CFTypeRef cfValues[] = {_cCTFont, _colorTable[j][i], number};
+            CFTypeRef cfValues[] = {_cCTFont, (__bridge CFTypeRef)(_colorTable[j][i]), number};
             if (_cCTAttribute[j][i]) CFRelease(_cCTAttribute[j][i]);
             _cCTAttribute[j][i] = CFDictionaryCreate(kCFAllocatorDefault, 
                                                      (const void **) cfKeys, 
@@ -215,7 +215,6 @@ static YLLGlobalConfig *sSharedInstance;
 
 - (void) setColor: (NSColor *) c hilite: (BOOL) h atIndex: (int) i {
 	if (i >= 0 && i < NUM_COLOR) {
-		[_colorTable[h][i] autorelease];
 		_colorTable[h][i] = [[c colorUsingColorSpaceName:NSCalibratedRGBColorSpace] retain];
 	}
 }

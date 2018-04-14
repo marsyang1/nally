@@ -7,6 +7,7 @@
 //
 
 #import "YLConnection.h"
+#import "YLSite.h"
 
 
 @implementation YLConnection

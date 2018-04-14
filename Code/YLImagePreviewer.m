@@ -110,8 +110,7 @@
 {
     if ([_window isReleasedWhenClosed])
         _window = nil;
-    
-    [self autorelease];
+
 }
 
 - (void) showLoadingWindow
@@ -298,7 +297,6 @@ NSStringEncoding encodingFromYLEncoding(YLEncoding ylenc)
         [_indicator removeFromSuperview];
         [_indicator release];
         [self windowWillClose:[NSNotification notificationWithName:@"LoadingFail" object:image]];
-        [image autorelease];
         [[NSWorkspace sharedWorkspace] openURL:_currentFileUrlDownloading];
         [_currentFileUrlDownloading release];
     }

@@ -213,7 +213,6 @@
 
 + (void) readLoop: (YLSSH *)boss
 {
-    NSAutoreleasePool *pool = [NSAutoreleasePool new];
     fd_set readFileDescriptorSet, errorFileDescriptorSet;
     BOOL exit = NO;
     unsigned char buf[4096];
@@ -256,8 +255,6 @@
         }
         
         if (iterationCount % 5000 == 0) {
-            [pool release];
-            pool = [NSAutoreleasePool new];
             iterationCount = 1;
         }
     }
@@ -266,7 +263,6 @@
         [boss performSelectorOnMainThread: @selector(close) withObject:nil waitUntilDone:NO];
     }
     
-    [pool release];
     [NSThread exit];
 }
 @end

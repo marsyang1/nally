@@ -17,7 +17,7 @@
 #import <netdb.h>
 #import <deque>
 
-#ifdef __DUMPPACKET__
+// #ifdef __DUMPPACKET__
 const char *_commandName[] = { "SE", "NOP", "DM", "BRK", "IP", "AO", "AYT", "EC", "EL", "GA", "SB", "WILL", "WONT", "DO", "DONT", "IAC" };
 
 void dump_packet(unsigned char *s, int length)
@@ -33,7 +33,7 @@ void dump_packet(unsigned char *s, int length)
 	}
 	NSLog(@"%s", tmp);
 }
-#endif
+// #endif
 
 @interface YLTelnet (Private)
 - (void) connectWithDictionary: (NSDictionary *)d;
@@ -100,8 +100,8 @@ void dump_packet(unsigned char *s, int length)
     if (!host) return;
     [self setHost: host];
     [_terminal clearAll];
-    [NSStream getStreamsToHost: host 
-                          port: port 
+    [NSStream getStreamsToHost: host
+                          port: port
                    inputStream: &_inputStream
                   outputStream: &_outputStream];
     [_inputStream retain];

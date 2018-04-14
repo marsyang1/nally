@@ -777,8 +777,8 @@
 - (void) confirmTabSheetDidEnd: (NSWindow *)sheet returnCode: (int)returnCode contextInfo: (void  *)contextInfo
 {
     if (returnCode == NSAlertDefaultReturn) {
-        [[(YLConnection *)[(id)contextInfo identifier] terminal] setHasMessage: NO];
-        [_telnetView removeTabViewItem: (id)contextInfo];
+        [[(YLConnection *)[(__bridge id)contextInfo identifier] terminal] setHasMessage: NO];
+        [_telnetView removeTabViewItem: (__bridge id)contextInfo];
     }
 }
 
