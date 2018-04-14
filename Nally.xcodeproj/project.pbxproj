@@ -14,6 +14,9 @@
 		079E9BCA0F08C4820089C9E2 /* YLFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 079E9BC90F08C4820089C9E2 /* YLFloatingView.m */; };
 		07B370690D6840600035E87D /* YLImagePreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B370680D6840600035E87D /* YLImagePreviewer.m */; };
 		07B73D900E5816FF00CC97D3 /* YLPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B73D8F0E5816FF00CC97D3 /* YLPluginLoader.m */; };
+		18CF6ACD75C13CF164FBF1A5 /* libPods-TextSuiteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B09F6E47145739B2E781F7E5 /* libPods-TextSuiteTests.a */; };
+		1B9BBEBD59657EBF2D16AEC9 /* libPods-Nally.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB57CC0259E27588A775E77 /* libPods-Nally.a */; };
+		369AE34620823819000E6488 /* TextSuiteTestsXc.m in Sources */ = {isa = PBXBuildFile; fileRef = 369AE34520823819000E6488 /* TextSuiteTestsXc.m */; };
 		850711AB0CA7A347005F4734 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850711AA0CA7A347005F4734 /* ApplicationServices.framework */; };
 		85137B330D02192800833909 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 85137B320D02192800833909 /* Credits.rtf */; };
 		85145AA10AB40053009FC710 /* YLTelnet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 85145AA00AB40053009FC710 /* YLTelnet.mm */; };
@@ -22,7 +25,6 @@
 		8540FBF412AB5938000FE1D6 /* YLRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 8540FBF312AB5938000FE1D6 /* YLRun.m */; };
 		8540FBF712AB5AF4000FE1D6 /* YLLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8540FBF612AB5AF4000FE1D6 /* YLLine.m */; };
 		8540FCCC12AB81B9000FE1D6 /* YLApplicationKitAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8540FCCB12AB81B9000FE1D6 /* YLApplicationKitAddition.m */; };
-		8540FE5412AB8BFA000FE1D6 /* TextSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8540FD0512AB886A000FE1D6 /* TextSuiteTests.m */; };
 		8540FE7412AB8D9C000FE1D6 /* encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 856CDB250C9650550025C754 /* encoding.m */; };
 		8540FE8012AB8E05000FE1D6 /* CommonType.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ED52280D0920E6003296D4 /* CommonType.m */; };
 		8540FE8112AB8E09000FE1D6 /* YLApplicationKitAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8540FCCB12AB81B9000FE1D6 /* YLApplicationKitAddition.m */; };
@@ -98,9 +100,12 @@
 		07B73D8F0E5816FF00CC97D3 /* YLPluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPluginLoader.m; sourceTree = "<group>"; };
 		07B73D9D0E581E2C00CC97D3 /* YLBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBundle.h; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0CB5B408C997EF2607E34309 /* Pods-Nally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nally.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nally/Pods-Nally.release.xcconfig"; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2CFDE301AA9B4F4052DC9CA9 /* Pods-Nally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nally.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nally/Pods-Nally.debug.xcconfig"; sourceTree = "<group>"; };
+		369AE34520823819000E6488 /* TextSuiteTestsXc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextSuiteTestsXc.m; sourceTree = "<group>"; };
 		7119D1820EE7DC46003F98C8 /* Nally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71585BD70EFE06C200E04E4E /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/Localizable.strings; sourceTree = "<group>"; };
 		71585BD80EFE086B00E04E4E /* zh_CN */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -119,8 +124,6 @@
 		8540FBF612AB5AF4000FE1D6 /* YLLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLine.m; sourceTree = "<group>"; };
 		8540FCCA12AB81B9000FE1D6 /* YLApplicationKitAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLApplicationKitAddition.h; sourceTree = "<group>"; };
 		8540FCCB12AB81B9000FE1D6 /* YLApplicationKitAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLApplicationKitAddition.m; sourceTree = "<group>"; };
-		8540FD0412AB886A000FE1D6 /* TextSuiteTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSuiteTests.h; sourceTree = "<group>"; };
-		8540FD0512AB886A000FE1D6 /* TextSuiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSuiteTests.m; sourceTree = "<group>"; };
 		8540FE4712AB8BA3000FE1D6 /* TextSuiteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextSuiteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8540FE4812AB8BA3000FE1D6 /* TextSuiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextSuiteTests-Info.plist"; sourceTree = "<group>"; };
 		856CDB240C9650550025C754 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
@@ -173,6 +176,10 @@
 		8DCEE147182CDF24008A9259 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
 		8DCEE148182CDF24008A9259 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		8DCEE14C182CDF3D008A9259 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9A53EC92BFA351E14A3029BC /* Pods-TextSuiteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextSuiteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextSuiteTests/Pods-TextSuiteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B09F6E47145739B2E781F7E5 /* libPods-TextSuiteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextSuiteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0F435C1C67BCA256320185 /* Pods-TextSuiteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextSuiteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextSuiteTests/Pods-TextSuiteTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEB57CC0259E27588A775E77 /* libPods-Nally.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Nally.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CF6ACD75C13CF164FBF1A5 /* libPods-TextSuiteTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +201,7 @@
 				850711AB0CA7A347005F4734 /* ApplicationServices.framework in Frameworks */,
 				85D2593A0D20FD48002BD294 /* libcrypto.dylib in Frameworks */,
 				85B0177212913CF3004F06E4 /* PSMTabBarControl.framework in Frameworks */,
+				1B9BBEBD59657EBF2D16AEC9 /* libPods-Nally.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +275,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				8540FE4812AB8BA3000FE1D6 /* TextSuiteTests-Info.plist */,
+				697D8CA849B1FA9936674767 /* Pods */,
 			);
 			name = MacBlueTelnet;
 			sourceTree = "<group>";
@@ -309,8 +319,21 @@
 				8DCEE14C182CDF3D008A9259 /* Security.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				EEB57CC0259E27588A775E77 /* libPods-Nally.a */,
+				B09F6E47145739B2E781F7E5 /* libPods-TextSuiteTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		697D8CA849B1FA9936674767 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CFDE301AA9B4F4052DC9CA9 /* Pods-Nally.debug.xcconfig */,
+				0CB5B408C997EF2607E34309 /* Pods-Nally.release.xcconfig */,
+				9A53EC92BFA351E14A3029BC /* Pods-TextSuiteTests.debug.xcconfig */,
+				BA0F435C1C67BCA256320185 /* Pods-TextSuiteTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8540FBF812AB5AFB000FE1D6 /* Text Suite */ = {
@@ -329,8 +352,7 @@
 		8540FD0312AB8843000FE1D6 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8540FD0412AB886A000FE1D6 /* TextSuiteTests.h */,
-				8540FD0512AB886A000FE1D6 /* TextSuiteTests.m */,
+				369AE34520823819000E6488 /* TextSuiteTestsXc.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -419,6 +441,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8540FE4B12AB8BA3000FE1D6 /* Build configuration list for PBXNativeTarget "TextSuiteTests" */;
 			buildPhases = (
+				A4C355B0D6A31C789573BF19 /* [CP] Check Pods Manifest.lock */,
 				8540FE4212AB8BA3000FE1D6 /* Resources */,
 				8540FE4312AB8BA3000FE1D6 /* Sources */,
 				8540FE4412AB8BA3000FE1D6 /* Frameworks */,
@@ -437,6 +460,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Nally" */;
 			buildPhases = (
+				8D17E468701801A6A94A8E74 /* [CP] Check Pods Manifest.lock */,
 				8540F7350CEB4435003B17D1 /* CopyFiles */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -475,6 +499,7 @@
 				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* MacBlueTelnet */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -545,6 +570,42 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		8D17E468701801A6A94A8E74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nally-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C355B0D6A31C789573BF19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextSuiteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -552,8 +613,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8540FE5412AB8BFA000FE1D6 /* TextSuiteTests.m in Sources */,
 				8540FE7412AB8D9C000FE1D6 /* encoding.m in Sources */,
+				369AE34620823819000E6488 /* TextSuiteTestsXc.m in Sources */,
 				8540FE8012AB8E05000FE1D6 /* CommonType.m in Sources */,
 				8540FE8112AB8E09000FE1D6 /* YLApplicationKitAddition.m in Sources */,
 				8540FE8212AB8E12000FE1D6 /* YLLine.m in Sources */,
@@ -650,6 +711,7 @@
 /* Begin XCBuildConfiguration section */
 		8540FE4912AB8BA3000FE1D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A53EC92BFA351E14A3029BC /* Pods-TextSuiteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -663,12 +725,6 @@
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
 				INFOPLIST_FILE = "TextSuiteTests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = TextSuiteTests;
 				SDKROOT = macosx;
@@ -678,6 +734,7 @@
 		};
 		8540FE4A12AB8BA3000FE1D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0F435C1C67BCA256320185 /* Pods-TextSuiteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -690,12 +747,6 @@
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
 				INFOPLIST_FILE = "TextSuiteTests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = TextSuiteTests;
 				SDKROOT = macosx;
@@ -706,6 +757,7 @@
 		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFDE301AA9B4F4052DC9CA9 /* Pods-Nally.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -721,7 +773,6 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = /Applications;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				OTHER_CFLAGS = "-D__DUMPPACKET__";
 				PRODUCT_BUNDLE_IDENTIFIER = org.yllan.Nally;
 				PRODUCT_NAME = Nally;
 				SDKROOT = macosx;
@@ -731,6 +782,7 @@
 		};
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB5B408C997EF2607E34309 /* Pods-Nally.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -762,7 +814,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_PREFIX_HEADER = "";
 				INFOPLIST_PREPROCESS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Nally;
 				SDKROOT = macosx;
@@ -776,7 +828,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_PREFIX_HEADER = "";
 				INFOPLIST_PREPROCESS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Nally;
 				SDKROOT = macosx;
 			};
