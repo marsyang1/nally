@@ -10,7 +10,7 @@
 #import "YLTerminal.h"
 #import "YLConnection.h"
 #import "YLSite.h"
-#import "YLLGLobalConfig.h"
+#import "YLLGlobalConfig.h"
 #import "YLMarkedTextView.h"
 #import "YLContextualMenuManager.h"
 #import "YLImagePreviewer.h"
