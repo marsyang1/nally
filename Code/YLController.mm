@@ -444,7 +444,11 @@
 
 - (IBAction) editSites: (id)sender
 {
-    [NSApp beginSheet: _sitesWindow modalForWindow: _mainWindow modalDelegate: nil didEndSelector: NULL contextInfo: nil];
+    [NSApp beginSheet: _sitesWindow
+       modalForWindow: _mainWindow
+       modalDelegate: nil
+       didEndSelector:NULL
+          contextInfo: nil];
 }
 
 - (IBAction) openSites: (id)sender

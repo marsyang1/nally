@@ -100,10 +100,11 @@ void dump_packet(unsigned char *s, int length)
     if (!host) return;
     [self setHost: host];
     [_terminal clearAll];
-    [NSStream getStreamsToHost: host
-                          port: port
-                   inputStream: &_inputStream
-                  outputStream: &_outputStream];
+    [NSStream getStreamsToHostWithName:[host name] port:port inputStream: &_inputStream outputStream: &_outputStream];
+//    [NSStream getStreamsToHost: host
+//                          port: port
+//                   inputStream: &_inputStream
+//                  outputStream: &_outputStream];
     [_inputStream retain];
     [_outputStream retain];
     [_inputStream setDelegate: self];
